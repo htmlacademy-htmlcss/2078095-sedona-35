@@ -39,6 +39,16 @@ body {
   text-transform: capitalize;
  }
 
+ .navigation-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color:#756157;
+ }
+
 
  .main-index {
   color: #000000;
@@ -126,5 +136,59 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-
  }
+
+ .subscribe {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/subscribe-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+
+ .subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+ }
+
+ .subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+ }
+
+.subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.page-footer {
+  color: #000000;
+}
+
+.footer-phone-number {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-inner {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat
+}
