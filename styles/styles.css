@@ -23,6 +23,19 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   color: #000000;
 
@@ -50,15 +63,16 @@ body {
  }
 
 
- .main-index {
+ .hero {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/main-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
  }
 
- .hero-title {
+
+ .main-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -66,7 +80,7 @@ body {
   text-transform: uppercase;
  }
 
- .hero-description {
+ .main-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -190,8 +204,9 @@ body {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/catalog-background.jpeg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .catalog-filter-title {
@@ -241,6 +256,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
 }
 
 .catalog-hotels-title {
