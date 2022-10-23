@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="page-container">
+
     <header class="page-header">
-        <a class="page-header-logo" href="#">
-            <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
-        </a>
         <nav class="navigation">
+            <a class="navigation-logo" href="#">
+              <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+            </a>
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">Главная</a>
@@ -25,7 +25,7 @@
             </ul>
 
 
-            <ul class="navigaton-list navigation-user">
+            <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
                       <span class="visually-hidden">Поиск</span>
@@ -40,26 +40,30 @@
                     <a class="navigation-button" href="#">Хочу сюда!</a>
                 </li>
             </ul>
-
         </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
         <section class="hero">
             <h1 class="visually-hidden">Туристический городок Седона</h1>
             <img class="hero-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+            <p class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <section class="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
-            <p class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
             <ul class="advantages-list">
                 <li class="advantages-item advantages-item-blue">
-                    <h3 class="advantages-title ">Настоящий городок</h3>
+                  <div class="advantages-item-text">
+                    <h3 class="advantages-title">Настоящий городок</h3>
                     <p class="advantages-description advantages-description-blue">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  </div>
+                  <div class="advantages-item-image">
                     <img class="advantages-image" src="images/advantages-1.jpg" width="800" height="384" alt="Домики на фоне гор">
+                  </div>
                 </li>
                 <li class="advantages-item advantages-item-light">
                     <h3 class="advantages-title">Небольшая площадь</h3>
@@ -74,9 +78,13 @@
                     <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
                 <li class="advantages-item advantages-item-blue">
+                  <div class="advantages-item-image">
                     <img class="advantages-image" src="images/advantages-2.jpg" width="800" height="384" alt="Красивые каньоны Аризоны">
+                  </div>
+                  <div class="advantages-item-text">
                     <h3 class="advantages-title">Там есть мост дьявола</h3>
                     <p class="advantages-description advantages-description-blue">Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
+                  </div>
                 </li>
                 <li class="advantages-item advantages-item-light">
                     <h3 class="advantages-title">Жильё</h3>
@@ -108,39 +116,45 @@
                 <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
         </section>
+      </div>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
 
-      <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-      </section>
+        <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+        </section>
 
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Номер телефона</h2>
-        <a class="footer-phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </section>
+        <section class="footer-phone">
+          <h2 class="visually-hidden">Номер телефона</h2>
+          <a class="footer-phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+        </section>
 
-      <section class="footer-about">
-        <h2 class="visually-hidden">Официальный сайт разработчиков</h2>
-      </section>
+        <section class="footer-about">
+          <h2 class="visually-hidden">Официальный сайт разработчиков</h2>
+          <a class="html-logo" href="https://htmlacademy.ru/">
+            <img src="/images/html-logo.svg" alt="zalupa">
+          </a>
+        </section>
+      </div>
     </footer>
   </div>
 </body>
