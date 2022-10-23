@@ -31,7 +31,7 @@ body {
 
 }
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,7 +42,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+}*/
 
 
 .page-header {
@@ -295,13 +295,34 @@ body {
   margin-left: auto;
 }
 
-.catalog-filter {
+.content-filter {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/catalog-background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 
+}
+
+.catalog-filter-container {
+  display: flex;
+
+
+}
+
+.catalog-filter-housing {
+  margin-left: 70px;
+}
+
+.catalog-filter-cost {
+  width: 288px;
+  margin-left: 140px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .catalog-filter-title {
