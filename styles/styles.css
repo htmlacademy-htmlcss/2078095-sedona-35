@@ -14,19 +14,6 @@
   font-display: swap;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 html {
   height: 100%;
 }
@@ -44,6 +31,19 @@ body {
   min-height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -54,7 +54,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-
+/* ----------------------------------------НАВИГАЦИЯ---------------------------------------- */
 
 .navigation {
   display: flex;
@@ -63,7 +63,6 @@ body {
 }
 
 .navigation-logo {
-
   position: absolute;
   z-index: 1;
 }
@@ -82,12 +81,6 @@ body {
   max-width: 450px;
 }
 
-.navigation-user {
-  max-width: 140px;
-  margin-left: auto;
-  margin-right: 20px;
-}
-
 .navigation-item {
   list-style: none;
 }
@@ -104,6 +97,12 @@ body {
   position: relative;
 }
 
+.navigation-user {
+  max-width: 140px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -114,38 +113,9 @@ body {
   fill: #000000;
 }
 
-.navigation-link:hover {
-  transition: 0.3s all;
-  color: #E5E5E5;
-}
-
-.navigation-link:active {
-  color:rgba(229, 229, 229, 0.3);
-}
-
-.navigation-link:hover .navigation-icon {
-  transition: 0.3s all;
-  fill: #E5E5E5;
-}
-
-.navigation-link:active .navigation-icon {
-  fill:  rgba(229, 229, 229, 0.3);
-}
-
 .navigation .button {
   align-self: center;
   padding: 8px 34px;
-}
-
-.navigation .button:hover {
-  transition: 0.3s all;
-  color:#ffffff;
-  background-color: #615048;
-}
-
-.navigation .button:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-user .navigation-link {
@@ -179,8 +149,39 @@ body {
   z-index: 1;
 }
 
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ НАВИГАЦИИ---------------------------------------- */
+
+.navigation-link:hover {
+  transition: 0.3s all;
+  color: #E5E5E5;
+}
+
+.navigation-link:active {
+  color:rgba(229, 229, 229, 0.3);
+}
+
+.navigation-link:hover .navigation-icon {
+  transition: 0.3s all;
+  fill: #E5E5E5;
+}
+
+.navigation-link:active .navigation-icon {
+  fill:  rgba(229, 229, 229, 0.3);
+}
+
+.navigation .button:hover {
+  transition: 0.3s all;
+  color:#ffffff;
+  background-color: #615048;
+}
+
+.navigation .button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 
+/* ----------------------------------------ХИРО БЛОК---------------------------------------- */
 .main-index {
   text-align: center;
 }
@@ -221,7 +222,7 @@ body {
 }
 
 
-
+/* ----------------------------------------ПРЕИМУЩЕСТВА---------------------------------------- */
 .advantages-list {
   list-style: none;
   margin: 0;
@@ -236,6 +237,7 @@ body {
   padding: 103px 85px 121px;
   box-sizing: border-box;
 }
+
 .advantages-images {
   display: block;
   max-width: 800px;
@@ -258,17 +260,6 @@ body {
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-  left: 50%;
-  bottom: -30px;
-  margin-left: -30px;
-}
-
-.advantages-title::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
   left: 50%;
   bottom: -30px;
   margin-left: -30px;
@@ -297,7 +288,18 @@ body {
   order: -1;
 }
 
+.advantages-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 50%;
+  bottom: -30px;
+  margin-left: -30px;
+}
 
+/* ----------------------------------------СЕРВИСЫ---------------------------------------- */
 
 .service-list {
   margin: 0;
@@ -341,7 +343,7 @@ body {
 }
 
 
-
+/* ----------------------------------------ПОИСК ОТЕЛЯ---------------------------------------- */
 .search {
   width: 592px;
   padding: 96px 304px;
@@ -375,7 +377,7 @@ body {
 }
 
 
-
+/* ----------------------------------------БЛОК ПОДПИСАТЬСЯ---------------------------------------- */
 .subscribe {
   width: 684px;
   padding: 96px 258px 104px;
@@ -427,19 +429,6 @@ body {
   border: none;
 }
 
-.field:hover {
-  background-color: #E6E6E6;
-}
-
-.field:focus {
-  outline: 2px solid #83B3D3;
-  outline-offset: -2px;
-}
-
-.field:active {
-  outline: 2px solid #000000;
-}
-
 .field::placeholder {
   color:#000000;
   opacity: 0.6;
@@ -453,7 +442,22 @@ body {
   padding: 8px 50px;
 }
 
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ ПОЛЯ EMAIL---------------------------------------- */
+.field:hover {
+  background-color: #E6E6E6;
+}
 
+.field:focus {
+  outline: 2px solid #83B3D3;
+  outline-offset: -2px;
+}
+
+.field:active {
+  outline: 2px solid #000000;
+}
+
+
+/* ----------------------------------------ПОДВАЛ---------------------------------------- */
 
 .page-footer {
   padding: 40px 0 30px 0;
@@ -491,15 +495,6 @@ body {
   fill: #83B3D3;
 }
 
-.footer-social-icon:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
-.footer-social-icon:hover {
-  transition: 0.3s all;
-  fill: #68A2CA;
-}
-
 .footer-phone {
   width: 331px;
   text-decoration: none;
@@ -507,19 +502,6 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-}
-
-.footer-phone:hover{
-  transition: 0.3s all;
-  color: #756157;
-}
-
-.footer-phone:focus{
-  color: #756157;
-}
-
-.footer-phone:active {
-  color: rgba(117, 97, 87, 0.3);
 }
 
 .html-logo {
@@ -538,6 +520,29 @@ body {
   fill: #000000;
 }
 
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ ПОДВАЛА---------------------------------------- */
+.footer-social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-social-icon:hover {
+  transition: 0.3s all;
+  fill: #68A2CA;
+}
+
+.footer-phone:hover{
+  transition: 0.3s all;
+  color: #756157;
+}
+
+.footer-phone:focus{
+  color: #756157;
+}
+
+.footer-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .html-logo-icon:hover {
   transition: 0.3s all;
   fill:  #756157;
@@ -548,8 +553,11 @@ body {
 }
 
 
+/* ----------------------------------------КАТАЛОГ---------------------------------------- */
 
 
+
+/* ----------------------------------------ФИЛЬТРЫ---------------------------------------- */
 .content-filter {
   color: #ffffff;
   background-color: rgba(131, 179, 211, 0.4);
@@ -575,6 +583,8 @@ body {
   margin-bottom: 8px;
 }
 
+
+/* ----------------------------------------ХЛЕБНЫЕ КРОШКИ---------------------------------------- */
 .breadcrumbs-list {
   list-style: none;
   display: flex;
@@ -613,6 +623,7 @@ body {
   text-decoration: none;
 }
 
+
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -638,7 +649,6 @@ body {
   width: 150px;
   border: none;
 }
-
 
 .diapason {
   margin-left: auto;
@@ -674,9 +684,6 @@ body {
   padding: 8px 50px;
 }
 
-
-
-
 .control {
   position: relative;
   display: block;
@@ -694,18 +701,6 @@ body {
   background-color: #ffffff;
 }
 
-.control:hover{
-  opacity: 0.6;
-}
-
-.control:focus-within  .control-mark {
-  outline: 3px solid #83B3D3;
-}
-
-.control:active{
-  opacity: 0.3;
-}
-
 .control:focus .control-mark {
   outline: 3px solid #83B3D3;
   outline-offset: -2px;
@@ -721,6 +716,9 @@ body {
   line-height: 23px;
 }
 
+.catalog-filter-item:last-child .control {
+  margin-bottom: 3px;
+}
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   width: 12.2px;
@@ -749,12 +747,9 @@ body {
   content: "";
 }
 
-
-
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -803,8 +798,6 @@ body {
   justify-content: center;
 }
 
-
-
 .catalog-filter-label {
   width: 143px;
   display: flex;
@@ -838,6 +831,25 @@ body {
   line-height: 24px;
 }
 
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ ФИЛЬТРОВ---------------------------------------- */
+
+.control:hover{
+  opacity: 0.6;
+}
+
+.control:focus-within .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active{
+  opacity: 0.3;
+}
 .catalog-filter-label:hover {
   background-color: #e6e6e6;
 }
@@ -848,14 +860,8 @@ body {
   outline-offset: -3px;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
 
-
-
+/* ----------------------------------------СОРТИРОВКА---------------------------------------- */
 .sorting{
   display: flex;
   width: 1060px;
@@ -890,24 +896,6 @@ body {
   box-sizing: border-box;
 }
 
-.select-control:hover {
-  border-color:#68A2CA;
-}
-
-.select-control:focus {
-  outline: 2px solid #68A2CA;
-  outline-offset: -2px;
-}
-
-.select-control:active {
-  outline:2px solid #3F5E72;
-  outline-offset: -2px;
-}
-
-.select-control:disabled {
-  opacity: 0.3;
-}
-
 .button-view {
   display: flex;
   align-items: center;
@@ -928,6 +916,26 @@ body {
   margin-right: 0;
 }
 
+
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ СОРТИРОВКИ---------------------------------------- */
+.select-control:hover {
+  border-color:#68A2CA;
+}
+
+.select-control:focus {
+  outline: 2px solid #68A2CA;
+  outline-offset: -2px;
+}
+
+.select-control:active {
+  outline:2px solid #3F5E72;
+  outline-offset: -2px;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
+}
+
 .button-view:hover{
   border-color:#000000;
 }
@@ -941,6 +949,7 @@ body {
 }
 
 
+/* ----------------------------------------ТОВАРЫ---------------------------------------- */
 
 .hotel{
   width: 1060px;
@@ -1042,7 +1051,7 @@ body {
   line-height: 20px;
 }
 
-
+/* ----------------------------------------ПАГИНАЦИЯ---------------------------------------- */
 
 .pagination {
   list-style: none;
@@ -1095,7 +1104,7 @@ body {
 }
 
 
-
+/* ----------------------------------------БЛОК ПОДПИСАТЬСЯ В КАТАЛОГЕ---------------------------------------- */
 .subscribe-container{
   display: flex;
   width: 684px;
@@ -1107,7 +1116,7 @@ body {
   background: #F2F2F2;
 }
 
-
+/* ----------------------------------------МОДАЛЬНОЕ ОКНО---------------------------------------- */
 
 .modal-container {
   position: fixed;
@@ -1164,21 +1173,6 @@ body {
   cursor: pointer;
   border-radius:50%;
 }
-
-.modal-close-button:hover {
-  transition: 0.3s all;
-  background-color: #E6E6E6;
-}
-
-.modal-close-button:focus {
-  outline:3px solid #83B3D3;
-}
-
-.modal-close-button:active {
-  opacity: 0.6;
-}
-
-
 
 .modal-field-label {
   font-family: "PT Sans", sans-serif;
@@ -1262,6 +1256,7 @@ body {
   width: 247px;
   margin: 0;
 }
+
 .field-button {
   border: none;
   position: relative;
@@ -1269,23 +1264,23 @@ body {
   width: 40px;
   height: 48px;
   padding: 17px 14px;
-  }
+}
 
-  .field-number {
+.field-number {
   border: none;
   background-color: #F2F2F2;
   padding: 14px 10px;
-  }
+}
 
-  .field-number[value] {
+.field-number[value] {
   font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  }
+}
 
-  .field-box-icon {
+.field-box-icon {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -1296,28 +1291,8 @@ body {
   fill:#756157;
   opacity: 0.3;
   margin: auto;
-  }
+}
 
-  .field-button:hover .field-box-icon {
-  fill:#000000;
-  opacity: 1;
-  }
-
-  .field-button:focus .field-box-icon {
-  outline: 3px solid #68A2CA;
-  outline-offset: 3px;
-  border-radius: 4px;
-  opacity: 1;
-  }
-
-  .field-button:focus-visible{
-  outline: none;
-  }
-
-  .field-button:active .field-box-icon {
-  fill:#000000;
-  opacity: 0.3;
-  }
 .plus {
   border-radius: 0 4px 4px 0;
 }
@@ -1331,7 +1306,42 @@ body {
   margin-bottom: 48px;
 }
 
+/* ----------------------------------------СОСТОЯНИЯ ДЛЯ МОДАЛЬНОГО ОКНА---------------------------------------- */
+.modal-close-button:hover {
+  transition: 0.3s all;
+  background-color: #E6E6E6;
+}
 
+.modal-close-button:focus {
+  outline:3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.6;
+}
+
+.field-button:hover .field-box-icon {
+  fill:#000000;
+  opacity: 1;
+}
+
+.field-button:focus .field-box-icon {
+  outline: 3px solid #68A2CA;
+  outline-offset: 3px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.field-button:focus-visible{
+  outline: none;
+}
+
+.field-button:active .field-box-icon {
+  fill:#000000;
+  opacity: 0.3;
+}
+
+/* ----------------------------------------ТУЛТИП---------------------------------------- */
 .tooltip {
   position: absolute;
   border-radius: 50%;
@@ -1355,11 +1365,6 @@ body {
   top: 7px;
   left: 12px;
   display: block;
-}
-
-.tooltip-toggle:hover {
-  transition: 0.3s all;
-  background-color: #68A2CA;
 }
 
 .tooltip-text {
@@ -1408,7 +1413,7 @@ body {
 
 
 
-/* BUTTONS*/
+/* ----------------------------------------КНОПКИ И ИХ СОСТОЯНИЯ---------------------------------------- */
 .button {
   text-transform: uppercase;
   font-size: 16px;
@@ -1482,6 +1487,7 @@ body {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .modal-button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
