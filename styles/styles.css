@@ -155,20 +155,20 @@ body {
 
 .navigation-link:hover {
   transition: 0.3s all;
-  color: rgba(229, 229, 229, 1);
+  color: rgba(104, 162, 202, 1);
 }
 
 .navigation-link:active {
-  color:rgba(229, 229, 229, 0.3);
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .navigation-link:hover .navigation-icon {
   transition: 0.3s all;
-  fill: rgba(229, 229, 229, 1);
+  fill: rgba(104, 162, 202, 1);
 }
 
 .navigation-link:active .navigation-icon {
-  fill:  rgba(229, 229, 229, 0.3);
+  fill:  rgba(104, 162, 202, 0.3);
 }
 
 .navigation .button:hover {
@@ -462,7 +462,7 @@ body {
 /* ----------------------------------------ПОДВАЛ---------------------------------------- */
 
 .page-footer {
-  padding: 40px 0 30px 0;
+  padding: 45px 0 30px 0;
 }
 
 .page-footer-container {
@@ -1193,7 +1193,7 @@ body {
   margin-right: 52px;
   border: none;
   background-color: rgba(242, 242, 242, 1);
-  background-image: url("../images/modal_close.svg");
+  background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
